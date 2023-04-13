@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>个人的小栈</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        /* 设置导航栏样式 */
+        nav {
+            background-color: #333; /* 设置背景颜色 */
+            display: flex; /* 设置弹性布局 */
+            justify-content: center; /* 使列表项左右两侧对齐 */
+            align-items: center; /* 垂直居中 */
+            padding: 10px; /* 设置内边距 */
+        }
+        /* 设置链接样式 */
+        nav a {
+            color: #fff; /* 设置文本颜色 */
+            text-decoration: none; /* 去掉下划线 */
+            font-size: 18px; /* 设置字体大小 */
+            transition: all 0.2s; /* 设置过渡效果 */
+        }
+        /* 鼠标悬停时修改链接样式 */
+        nav a:hover {
+            color: #ffa500; /* 设置文本颜色 */
+        }
+        /* 设置当前页面链接样式 */
+        nav a.active {
+            color: #ffa500; /* 设置文本颜色 */
+        }
+        /* 设置菜单项样式 */
+        nav ul {
+            list-style: none; /* 去掉列表项默认样式 */
+            margin: 0; /* 去掉外边距 */
+            display: flex; /* 设置弹性布局 */
+        }
+        /* 设置菜单项之间的分隔线 */
+        nav li:not(:last-child)::after {
+            content: "|"; /* 添加内容 */
+            margin: 0 10px; /* 设置边距 */
+            color: #fff; /* 设置文本颜色 */
+        }
+        /* 当屏幕尺寸小于768像素时，调整导航栏布局 */
+        /*@media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                margin-top: 10px;
+                flex-direction: column;
+            }
+
+            nav li:not(:last-child)::after {
+                display: none;
+            }
+        }*/
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 70px 0 60px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .container p {
+            text-indent: 2em;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+            margin: 20px 0;
+            padding: 0 20px;
+            text-align: left;
+        }
+        .keyword1 {
+            color: #FF6600;
+            font-weight: bold;
+        }
+        .keyword2 {
+            color: #3399FF;
+            font-weight: bold;
+        }
+        .keyword3 {
+            color: #00CC99;
+            font-weight: bold;
+        }
+        .keyword4 {
+            color: #FFCC00;
+            font-weight: bold;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #eee;
+        }
+        footer p {
+            text-align: center;
+            line-height: 50px;
+            font-size: 14px;
+            color: #666;
+        }
+        footer a {
+            text-decoration: none;
+            color: #666;
+        }
+        .icp {
+            margin-right: 10px;
+        }
+        .me {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">技术</a></li>
+            <li><a href="#">闲谈</a></li>
+            <li><a href="#">关于</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <h1>欢迎来到我的小栈</h1>
+    <p>作为一名资深的程序员，我已经有数年的开发经验，并且熟练掌握多种编程语言，包括 <mark class="keyword1">C/C++</mark>、<mark class="keyword2">Python</mark>、<mark class="keyword3">SQL</mark> 和 <mark class="keyword4">Javascript</mark> 等。我对技术的研究非常热爱，并始终紧跟前沿技术的发展，力求在编程领域保持领先的地位。</p>
+    <p>在我职业生涯的早期，我主要致力于开发 <mark class="keyword1">C/C++</mark> 应用程序，这些应用程序广泛用于游戏开发、操作系统、嵌入式系统和网络协议开发等领域。在这个过程中，我不仅掌握了 <mark class="keyword1">C/C++</mark> 的基本语法，还深入研究了它们的底层实现原理，包括指针、内存管理、数据结构和算法等。这为我后来的开发工作奠定了坚实的基础。</p>
+    <p>后来，我转向了 <mark class="keyword2">Python</mark> 编程，这一语言的灵活性、易读性和强大的库支持使我非常着迷。我使用 <mark class="keyword2">Python</mark> 构建了各种应用程序，包括Web应用、机器学习模型和数据分析工具等。我还对 <mark class="keyword2">Python</mark> 生态系统中的各种库和框架进行了深入研究，包括<mark class="keyword5">Django</mark>、<mark class="keyword5">Flask</mark>、<mark class="keyword5">NumPy</mark>、<mark class="keyword5">Pandas</mark>和<mark class="keyword5">TensorFlow</mark>等。</p>
+    <p>在数据库领域，我主要使用 <mark class="keyword3">SQL</mark> 进行开发。我熟练掌握了 <mark class="keyword3">SQL</mark> 语言的基本语法和高级特性，能够有效地设计和优化各种类型的关系数据库。我还熟悉各种数据库管理系统（DBMS），包括<mark class="keyword5">MySQL</mark>、<mark class="keyword5">PostgreSQL</mark>、<mark class="keyword5">Oracle</mark>和<mark class="keyword5">SQL Server</mark>等。</p>
+    <p>在前端开发领域，我主要使用 <mark class="keyword4">Javascript</mark> 进行开发。我熟悉各种 <mark class="keyword4">Javascript</mark> 库和框架，包括<mark class="keyword5">React</mark>、<mark class="keyword5">Angular</mark>和<mark class="keyword5">Vue</mark>等。我也了解前端工具链和构建系统，例如<mark class="keyword5">Webpack</mark>、<mark class="keyword5">Babel</mark>和<mark class="keyword5">Gulp</mark>等。我对<mark class="keyword5">CSS</mark>和<mark class="keyword5">HTML</mark>的实现方式也有深入的了解，能够有效地进行前端页面设计和开发。</p>
+    <p>总的来说，我的技术栈非常广泛，我善于在各种编程语言和技术之间灵活切换。在我工作的过程中，我注重代码质量和可维护性，并积极采用各种最佳实践，例如测试驱动开发、敏捷开发和代码审查等。此外，我也乐于分享我的经验和知识，积极参与各种技术社区和开源项目，为开发者们提供有价值的帮助和支持。</p>
+</div>
+<footer>
+    <div>
+        <p><a class="icp" href="https://beian.miit.gov.cn/#/Integrated/index">京ICP备2021010019号</a> Copyright &copy; <a class="me" href="mailto:1134791004@qq.com">Yathon</a> 2023.</p>
+    </div>
+</footer>
+</body>
+</html>
